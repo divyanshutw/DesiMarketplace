@@ -20,7 +20,7 @@ So, Desi Marketplace is a larger scale version of a typical B2B application wher
 ## **How Desi marketplace connects the supply chain?(Solution to problem ii)**
 
 Most **B2B applications and websites are simply buyer and seller based**. Well the supply chain is not that simple. A typical supply chain does not have just **a** buyer and **a** seller, it comprises of < `Raw material manufacturer-> Product manufacturer-> Wholesaler-> Retailer-> Consumer` >. **E-shopping sites like Amazon, Flipkart, Myntra, etc cut the supply chain and connect the Manufacturer directly to the Consumers**. Now you know how are they able to give such huge discounts by keeping the middle men aside. Well this might sound good to you but the fact is that these **small retailers contribute to about 10% of India's GDP** ([Reference](https://www.ibef.org/industry/retail-india.aspx)).
-![Capture](https://github.com/LalitKumarTyagi/Desi-Marketplace/blob/master/Capture.PNG)
+![Capture](https://github.com/divyanshutw/DesiMarketplace/blob/master/Images/Capture.PNG)
 
 After analysing different supply chains we proposed a completely new concept. The idea is to **divide all the components of the supply chain into Manufacturers, Retailers and Consumers**. This way the whole system will work as it is but online.
 
@@ -77,13 +77,13 @@ Java, Android Studio, Google Maps API, Firebase
 
 ## Workflow of activities:
 1. Login page.
-- ![WhatsApp%20Image%202020-07-23%20at%2019.27.59%20(1)](https://github.com/LalitKumarTyagi/Desi-Marketplace/blob/master/WhatsApp%20Image%202020-07-23%20at%2019.27.59%20(1).jpeg)
+- ![WhatsApp%20Image%202020-07-23%20at%2019.27.59%20(1)](https://github.com/divyanshutw/DesiMarketplace/blob/master/Images/WhatsApp%20Image%202020-07-23%20at%2019.27.59%20(1).jpeg)
    - 1.1 If the user has already signed up, he can simply login or can go to the signup page.
    - 1.2 Three different types of activities based on whether the user is a Manufacturer, Retailer or a Consumer.
    - 1.3 After signup or login, the user is directed to the home page.
 
 2. The home page is displayed as follows:
-   - ![WhatsApp%20Image%202020-07-23%20at%2019.27.59](https://github.com/LalitKumarTyagi/Desi-Marketplace/blob/master/WhatsApp%20Image%202020-07-23%20at%2019.27.59.jpeg)
+   - ![WhatsApp%20Image%202020-07-23%20at%2019.27.59](https://github.com/divyanshutw/DesiMarketplace/blob/master/Images/WhatsApp%20Image%202020-07-23%20at%2019.27.59.jpeg)
    - 2.1 The *i* button displays details about the app.
    - 2.2 The *logout* is to logout from the current account.
    - 2.3 The *Profile* button enable the user to edit his details.
@@ -95,7 +95,7 @@ Java, Android Studio, Google Maps API, Firebase
    - 2.9 The *News* button will open up an activity similar to a news app.
   
 3. The sellerPage activity will open up as shown:
-  - ![WhatsApp%20Image%202020-07-23%20at%2019.29.39](https://github.com/LalitKumarTyagi/Desi-Marketplace/blob/master/WhatsApp%20Image%202020-07-23%20at%2019.29.39.jpeg)
+  - ![WhatsApp%20Image%202020-07-23%20at%2019.29.39](https://github.com/divyanshutw/DesiMarketplace/blob/master/Images/WhatsApp%20Image%202020-07-23%20at%2019.29.39.jpeg)
   
   ---
   
