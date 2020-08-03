@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393e46"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222831"
+        tools:context=".RegisterRetailActivity">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All entries are cumpulsory"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:background="#393e46"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editText_enterprise"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:background="#393e46"
+            android:ems="10"
+            android:hint="Shop name"
+            android:inputType="textPersonName"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_phone" />
+
+        <EditText
+            android:id="@+id/editText_description"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#393e46"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Write something about your shop"
+            android:inputType="textMultiLine"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#00adb5"
+            android:onClick="onClickNext"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_payment" />
+
+        <EditText
+            android:id="@+id/editText_social"
+            android:layout_width="317dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="24dp"
+            android:background="#393e46"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Facebook: \nInstagram: \nWhatsapp: \nYour website: "
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="315dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            android:background="#393e46"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_productType" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Upload Image:"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/listView"
+            app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+        <ImageButton
+            android:id="@+id/imageButton_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#00adb5"
+            android:onClick="onClickCapture"
+            app:layout_constraintEnd_toEndOf="@+id/listView"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/listView"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:text="Enter your social media accounts here: (Write N/A in any field if don't have an account(OPTIONAL)"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_description" />
+
+        <TextView
+            android:id="@+id/textView_productType"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select your shop type"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_enterprise" />
+
+        <CheckBox
+            android:id="@+id/checkBox_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Home delivery available"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_social" />
+
+        <CheckBox
+            android:id="@+id/checkBox_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Digital payment mode available"
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_delivery" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listView"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

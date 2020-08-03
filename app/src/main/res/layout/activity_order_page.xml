@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderPage"
+    android:weightSum="100">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="65"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222831">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="35"
+        android:background="#393e46">
+
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="You can type your order here and send the message. For any issues regarding order, you can chat with the seller.  After the order is confirmed, the seller will send an Invoice/OrderSummary which will be visible in the above area."
+            android:textColor="#eeeeee"
+            android:textColorHint="#eeeeee"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:background="#eeeeee"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#070707"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+        <ImageButton
+            android:id="@+id/imageButton_send"
+            android:layout_width="41dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="76dp"
+            android:background="#00adb5"
+            android:onClick="onClickSend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.388"
+            app:layout_constraintStart_toEndOf="@+id/editText_message"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

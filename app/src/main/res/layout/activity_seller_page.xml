@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellerPage"
+    android:weightSum="100">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222831">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_enterpriseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="28dp"
+                    android:text="EnterpriseName"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView_ownerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="OwnerName"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView_enterpriseName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_enterpriseName" />
+
+                <TextView
+                    android:id="@+id/textView_productType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ProductType"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView_ownerName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_ownerName" />
+
+                <TextView
+                    android:id="@+id/textView_OvallRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Overall User Rating:"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView_productType"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_productType" />
+
+                <TextView
+                    android:id="@+id/textView_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Rating"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView_OvallRating"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_productType" />
+
+                <TextView
+                    android:id="@+id/textView_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Product: "
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    app:layout_constraintStart_toStartOf="@+id/textView_OvallRating"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_OvallRating" />
+
+                <TextView
+                    android:id="@+id/textView_productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="ProductName"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    app:layout_constraintStart_toEndOf="@+id/textView_product"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_rating" />
+
+                <TextView
+                    android:id="@+id/textView_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="#393e46"
+                    android:text="ProductDescription"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView_product"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_product" />
+
+                <TextView
+                    android:id="@+id/textView_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="social"
+                    android:textColor="#eeeeee"
+                    android:textColorHint="#eeeeee"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_enterpriseImage" />
+
+                <ImageView
+                    android:id="@+id/imageView_enterpriseImage"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_description"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="40"
+        android:background="#393e46">
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_book" />
+
+        <ImageButton
+            android:id="@+id/imageButton_favourite"
+            android:layout_width="43dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="#00adb5"
+            android:onClick="onClickFavourite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+        <ImageButton
+            android:id="@+id/imageButton_map"
+            android:layout_width="43dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#00adb5"
+            android:onClick="onClickMap"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_email"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        <ImageButton
+            android:id="@+id/imageButton_call"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#00adb5"
+            android:onClick="onClickCall"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_map"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:srcCompat="@android:drawable/sym_call_outgoing" />
+
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="278dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="#eeeeee"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Type messsage to chat"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_map" />
+
+        <ImageButton
+            android:id="@+id/imageButton_send"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:background="#00adb5"
+            android:onClick="onClickSend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toEndOf="@+id/editText_message"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton_map"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="#00adb5"
+            android:onClick="onClickOrder"
+            android:text="Previous orders"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="#00adb5"
+            android:text="Add to bahi khata"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_order"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/imageButton_email"
+            android:layout_width="63dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#00adb5"
+            android:onClick="onClickEmail"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_favourite"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
